@@ -25,5 +25,14 @@ https://www.esios.ree.es/es/analisis/1001?vis=1&start_date=01-06-2022T01%3A00&en
 #Obtenir horari sortida i posta de sol
 https://salidaypuestadelsol.com
 
+#expresions regulars per afegir l'any a la data
+#S'han provat en geany
+#Opcio1:
+Find: ([0-9][0-9])(?:/)([0-9][0-9])(?:;)
+#Opcio1:
+Replace: \1/\2/2022;\3
+#Opcio2:
+Replace: 2022-\2-\1;\3 
+
 #Orientacio panells solars
 https://atersa.shop/como-orientar-paneles-solares/
