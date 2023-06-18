@@ -1,3 +1,6 @@
+#Obtenir dades de endesa
+https://zonaprivada.edistribucion.com/areaprivada
+
 curl "https://api.esios.ree.es/indicators/59526?start_date=2015-08-16T00%3A00%3A00Z&end_date=2015-09-15T07%3A34%3A17Z" -X GET \
 	-H "Accept: application/json; application/vnd.esios-api-v1+json" \
 	-H "Content-Type: application/json" \
@@ -18,9 +21,12 @@ curl "https://api.esios.ree.es/indicators/1001?start_date=2022-06-01T01%3A00%3A0
    -H x-api-key: request_your_personal_token_sending_email_to_consultasios@ree.es \
    -o pvpc_2206-2306.json
 
-#Consulta directe utilitzant el vavaguedor
+#Consulta directe utilitzant el navaguedor
 https://www.esios.ree.es/es/analisis/1001?vis=1&start_date=01-06-2022T01%3A00&end_date=07-06-2023T23%3A55&compare_start_date=31-05-2022T01%3A00&groupby=hour&compare_indicators=&geoids=8743&zoom=8&latlng=39.37252570201878%2C2.74383544921875
 #Despres es pot descarregar utilitzant un csv.
+#La data es representa així
+(202[2,3])(?:-)([0-9][0-9])(?:-)([0-9][0-9])(?:T)([0-9][0-9]):([0-9][0-9]):([0-9][0-9])([+][0-9][0-9]):([0-9][0-9])
+
 
 #Obtenir horari sortida i posta de sol
 https://salidaypuestadelsol.com
